@@ -1,0 +1,104 @@
+body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", Arial, sans-serif;
+
+  }
+.heading{
+color: white;
+font-size: 40px;
+text-align: center;
+margin-top: 8%;
+margin-bottom: 20px;
+}
+
+  .main {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+  
+.project {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 15px;
+    position: relative; 
+    height: 250px; 
+    width: 80%;
+  }
+  .project_image img:not(#mobile_travel, #UI_design, #ATM) {
+    max-width: 60%; 
+    max-height: 60%; 
+    border-radius: 10px;
+    position: absolute;
+    top: 14%; 
+    left: 4%;
+
+  }
+  #mobile_travel{
+    max-width: 100%;
+    max-height: 70%; 
+    border-radius: 10px;
+    position: absolute; 
+    top: 10%; 
+    left: 10%;
+  }
+  #UI_design{
+    max-width: 100%;
+    max-height: 70%; 
+    border-radius: 10px;
+    position: absolute; 
+    top: 10%; 
+    left: 8%;
+  }
+  #ATM{
+    max-width: 100%; 
+    max-height: 70%; 
+    border-radius: 10px;
+    position: absolute;
+    top: 10%; 
+    left: 5%;
+  }
+  .detail {
+    color: black;
+    text-align: left;
+    margin-left: 380px;
+    margin-top: 2%;
+    margin-right: 50px;
+  }
+
+  .project_heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .project_description {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  
+  .detail ul {
+    list-style: disc;
+    margin-bottom: 15px;
+    text-align:justify ;
+  }
+
+  .detail ul li {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  
+  .detail p {
+    margin-bottom: 15px;
+  }
+  

@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+    color: black;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+main {
+    padding: 100px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.slider_div {
+    background-color: black;
+    padding: 10px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;   
+}
+
+.slider button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.slider button:hover {
+    border-bottom: 2px solid #00F0FF;
+    padding-bottom: 8px;
+
+}
+
+.slider button.active {
+    border-bottom: 2px solid #00F0FF; 
+}
+
+.education_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.education_heading {
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.education_description {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+section > div {
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: 12px;
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-left: 30px;
+    /* margin-bottom: 40px; */
+    font-size: 12px;
+}
+
+p {
+    padding-left: 50px;
+    padding-right: 70px;
+    margin-top: 0px;
+    text-align: justify;
+    font-size: 12px;
+    margin-right: 100px;
+
+}
+
+ul {
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 12px;
+
+}
+.education_section{
+   
+    /* margin: 100px; */
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 40px;
+}
+.duration{
+ font-size: 12px;
+}
+button{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.certification_section{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 40px;   
+}
+.certificationSection{
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.certification_from{
+    margin-top: -10px;
+    padding-top: 0px;
+}
+.certification_title{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    color: black;
+}
+
+ul{
+    list-style: disc;
+
+}
+.certificate_link{
+color: black;
+}

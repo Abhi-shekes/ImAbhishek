@@ -1,0 +1,78 @@
+/* Center the contact form on the page */
+body {
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.contact_me_section {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Adjust as needed */
+}
+
+/* Style the contact div with a white border and add some spacing */
+.contact_me_div {
+    border: 2px solid white;
+    padding: 20px;
+    max-width: 400px; /* Adjust as needed */
+}
+
+#contact_me_label,
+.input label,
+.input input,
+.input textarea,
+.form_button {
+    color: white;
+}
+
+#contact_me_label {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form_button {
+    background-color: #00F0FF;
+    height: 50px; /* Set the desired height of the button */
+    width: 305px;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 8px;
+    border-radius: 5px;
+
+}
+
+.input input{
+    width: 300px;
+    height: 25px;
+    color: black;
+    font-weight: 500;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+.input textarea {
+    height: 70px;
+    width: 300px;
+    color: black;
+    font-weight: 500;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+
+.input,
+.button {
+    margin-bottom: 16px;
+}

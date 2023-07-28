@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../static/STYLE/contactstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../static/STYLE/nav_bar.css">
+    <link rel="stylesheet" href="../static/STYLE/footer.css">
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+</head>
+<body>
+    <header>
+  
+        <div class="nav_bar">
+            <a href="../index.html" class="nav-button">About Me</a>
+            <a href="Internship.html" class="nav-button">Experience</a>
+            <a href="Project.html" class="nav-button">Projects</a>
+            <a href="Education.html" class="nav-button">Education</a>
+            <a id="active" href="Contact.html" class="nav-button">Contact</a>
+        </div>
+        
+    </header>
+
+    
+    <main class="contact_me_section">
+        <div class="contact_me_div">
+            <h1 id="contact_me_label">Contact Me</h1>
+            <div class="contact">
+                
+                <form id="contactForm" action="mailto:whysoseriousjustsmile@gmail.com" method="post">
+                    <div class="input">
+                        <label for="name">Enter Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Enter Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="description">Enter Your Message:</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                    </div>
+                    <div class="button">
+                        <input class="form_button" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+       
+    </main>
+
+    <footer>
+        <div class="footer1">
+            <div>
+                <i class="fas fa-phone"></i>
+                <h3>+91 9967900689</h3>
+            </div>
+          
+            <div>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:abhishekshivtiwari@gmail.com"><h3>abhishekshivtiwari@gmail.com</h3></a>
+            </div>
+        
+            <div>
+                <i class="fas fa-home"></i>
+                <h3>Mumbai, India</h3>
+            </div>          
+        </div>
+  
+        <div class="footer2">
+            <a href="https://github.com/Abhi-shekes" id="github" class="footer-button">
+                <i class="fab fa-github-square"></i>
+                <h4>GitHub</h4>
+            </a>
+  
+            <a href="https://www.linkedin.com/in/abhishek-tiwari-6172a6223/" id="linkedin" class="footer-button">
+                <i class="fab fa-linkedin"></i>
+                <h4>LinkedIn</h4>
+            </a>
+  
+            <a href="../static/ASSET/RESUME/Resume_With_Intern.pdf" id="resume" class="footer-button">
+                <i class="fas fa-file"></i>
+                <h4>Resume</h4>
+            </a>  
+        </div>
+    
+        <p>&copy; 2023 Abhishek Tiwari. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("contactForm");
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+    
+                // Perform form validation here
+                const name = form.elements["name"].value;
+                const email = form.elements["email"].value;
+                const description = form.elements["description"].value;
+    
+                if (!name || !email || !description) {
+                    alert("Please fill in all fields.");
+                    return;
+                }
+    
+                // Send the form data using EmailJS
+                const templateParams = {
+                    from_name: name,
+                    from_email: email,
+                    message: description,
+                };
+    
+                // Replace 'your_service_id', 'your_template_id', and 'your_user_id' with your actual EmailJS credentials
+                emailjs.send("service_jeexm3e", "service_jeexm3e", templateParams, "abhishakes")
+                    .then(function(response) {
+                        // Handle the successful email sending
+                        console.log("Email sent successfully!", response);
+                        alert("Form submitted and email sent!");
+                    }, function(error) {
+                        // Handle errors that occurred during email sending
+                        console.error("Failed to send email:", error);
+                        alert("An error occurred while submitting the form.");
+                    });
+            });
+        });
+    </script>
+    
+
+</body>
+</html>

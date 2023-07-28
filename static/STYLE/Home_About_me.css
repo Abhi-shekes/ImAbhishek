@@ -1,0 +1,81 @@
+body {
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.about_me {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: black;
+}
+
+.text_content {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 60%;
+    margin-top: 140px;
+    margin-left: 150px;
+    
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.my_image {
+    flex: 1;
+    text-align: right;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+#header_start{
+    font-size: 20px;
+font-weight: bold;
+margin-top: 15px;
+margin-bottom: 0px; /* Decrease the margin between the lines */
+
+}
+
+#name {
+    font-size: 36px;
+    color: #00F0FF;
+    margin-bottom: 0px; /* Decrease the margin between the lines */
+margin-top: 10px;
+font-weight: bold;
+}
+
+#designation .small-text {
+    font-size: 20px;
+
+    margin-bottom: 0px; /* Decrease the margin between the lines */
+
+}
+
+#designation .big-text {
+    font-size: 24px;
+    margin-bottom: 0px; /* Decrease the margin between the lines */
+    font-weight: bold;
+
+}
+
+#my_image {
+    max-width: 100%;
+}
+#contact_button {
+    color: black;
+    background-color: #00F0FF;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    /* Add hover effect */
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px #00F0FF;
+    cursor: pointer;
+}
+
+/* Add the 3D-like shadow on hover */
+#contact_button:hover {
+    box-shadow: 0 8px 16px #00F0FF;
+    /* transform: translateY(-2px); */
+}

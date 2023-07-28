@@ -1,0 +1,95 @@
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color:black;
+    color: black;
+}
+
+.section-heading {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 8%;
+    text-align: center;
+
+}
+
+.internship-container {
+    display: flex;
+    justify-content: center;
+}
+
+.intern {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 140px;
+}
+
+.intern_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intern_heading {
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+.duration {
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.intern_description {
+    list-style: none;
+    padding: 0;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-size: 12px;
+
+}
+
+.intern_description li {
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-right: 100px;
+    list-style: disc;
+}
+
+.intern_links {
+    display: flex;
+    color: black;
+    padding-left: 100px;
+}
+
+.intern-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.intern-button i {
+    margin-right: 5px;
+}
+
+/* Customize the LinkedIn icon and Website icon using Font Awesome */
+.fab {
+    font-size: 20px;
+}
+
+.fas {
+    font-size: 20px;
+}
+
+.intern-button:hover {
+    color: #00F0FF;
+}
+
