@@ -94,8 +94,10 @@
     </footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+                document.addEventListener("DOMContentLoaded", function () {
+            emailjs.init("LWzGAGtHWYpqoqxjj");
             const form = document.getElementById("contactForm");
+     
             form.addEventListener("submit", function (event) {
                 event.preventDefault(); 
     
