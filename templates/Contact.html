@@ -33,7 +33,7 @@
             <h1 id="contact_me_label">Contact Me</h1>
             <div class="contact">
                 
-                <form id="contactForm" action="mailto:whysoseriousjustsmile@gmail.com" method="post">
+                <form id="contactForm"  method="post">
                     <div class="input">
                         <label for="name">Enter Your Name</label>
                         <input type="text" id="name" name="name" required>
@@ -97,9 +97,9 @@
         document.addEventListener("DOMContentLoaded", function () {
             const form = document.getElementById("contactForm");
             form.addEventListener("submit", function (event) {
-                event.preventDefault(); // Prevent the form from submitting normally
+                event.preventDefault(); 
     
-                // Perform form validation here
+  
                 const name = form.elements["name"].value;
                 const email = form.elements["email"].value;
                 const description = form.elements["description"].value;
@@ -109,21 +109,15 @@
                     return;
                 }
     
-                // Send the form data using EmailJS
                 const templateParams = {
                     from_name: name,
-                    from_email: email,
-                    message: description,
+                    to_name: "abhishek",
+                    message:"Email: " + email + "Description " + description,
                 };
     
-                // Replace 'your_service_id', 'your_template_id', and 'your_user_id' with your actual EmailJS credentials
-                emailjs.send("service_jeexm3e", "service_jeexm3e", templateParams, "abhishakes")
-                    .then(function(response) {
-                        // Handle the successful email sending
-                        console.log("Email sent successfully!", response);
-                        alert("Form submitted and email sent!");
-                    }, function(error) {
-                        // Handle errors that occurred during email sending
+                emailjs.send("portfolio_website","template_il2d1h3", templateParams).then(function(response) {
+                    alert("Thank you! Your message has been sent.");
+                }, function(error) {
                         console.error("Failed to send email:", error);
                         alert("An error occurred while submitting the form.");
                     });
