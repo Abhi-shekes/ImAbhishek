@@ -31,14 +31,13 @@ body {
     font-size: 20px;
 font-weight: bold;
 margin-top: 15px;
-margin-bottom: 0px; /* Decrease the margin between the lines */
-
+margin-bottom: 0px; 
 }
 
 #name {
     font-size: 36px;
     color: #00F0FF;
-    margin-bottom: 0px; /* Decrease the margin between the lines */
+    margin-bottom: 0px;
 margin-top: 10px;
 font-weight: bold;
 }
@@ -46,13 +45,13 @@ font-weight: bold;
 #designation .small-text {
     font-size: 20px;
 
-    margin-bottom: 0px; /* Decrease the margin between the lines */
+    margin-bottom: 0px;
 
 }
 
 #designation .big-text {
     font-size: 24px;
-    margin-bottom: 0px; /* Decrease the margin between the lines */
+    margin-bottom: 0px; 
     font-weight: bold;
 
 }
@@ -74,8 +73,18 @@ font-weight: bold;
     cursor: pointer;
 }
 
-/* Add the 3D-like shadow on hover */
+
 #contact_button:hover {
     box-shadow: 0 8px 16px #00F0FF;
-    /* transform: translateY(-2px); */
+}
+
+@media (max-width: 768px) {
+  .my_image {
+    display: none;
+  }
+
+  .text_content {
+    max-width: 100%;
+    margin: 40px 20px;
+  }
 }
